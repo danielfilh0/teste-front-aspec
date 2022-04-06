@@ -1,24 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.scss">
-    <title>Aspec</title>
-  </head>
-  <body>
-    <div id="app">
-      <aside class="menu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/5d568d2bbd.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./styles/style.scss" />
+        <title>Aspec</title>
+    </head>
+    <body>
+        <div id="app">
+            <aside class="menu">
+                <div>
+                    <header class="menu__header">
+                        <div class="menu__logo">
+                            <img
+                                src="./assets/logo-prefecture.png"
+                                alt="Logo da Prefeitura Municipal de Aspec Informática do Agreste"
+                            />
+                        </div>
 
-      </aside>
+                        <div>
+                            <p>Prefeitura Municipal de</p>
 
-      <main class="dashboard">
+                            <h3>Aspec Informática do Agreste</h3>
 
-      </main>
-    </div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+                            <small><span>Atualizado em: </span>08/12/2021 18:20</small>
+                        </div>
+                    </header>
+
+                    <nav class="menu__nav">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="./assets/grid.svg"
+                                        alt="Início"
+                                    />Início</a
+                                >
+                            </li>
+
+                            <li class="menu__item">
+                                <button>
+                                    <span
+                                        ><img
+                                            src="./assets/dolar.svg"
+                                        />Receitas</span
+                                    >
+
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
+
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">Orçamentária arrecadada</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Extra orçamentária</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Prevista e arrecadada</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu__item">
+                                <button>
+                                    <span
+                                        ><img
+                                            src="./assets/dashed-dolar.svg"
+                                        />Despesas</span
+                                    >
+
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
+
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">Lorem Ipsum</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Lorem Ipsum</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Lorem Ipsum</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <footer class="menu__footer">
+                    <nav class="menu__links">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="./assets/settings.svg"
+                                        alt="Configurações"
+                                    />Configurações</a
+                                >
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./assets/help.svg"
+                                        alt="Ajuda & Suporte"
+                                    />Ajusta & Suporte</a
+                                >
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="./assets/warning.svg"
+                                        alt="Avaliar a Plataforma"
+                                    />Avaliar a Plataforma</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="menu__copyright">
+                        <img
+                            src="./assets/logo-aspec.svg"
+                            alt="Logo da Aspec Informática"
+                        />
+
+                        <p>Plataforma tecnológica</p>
+
+                        <p>© 2022</p>
+                    </div>
+                </footer>
+
+				<button class="menu__open">
+					<i class="fas fa-caret-right"></i>
+				</button>
+            </aside>
+
+            <main class="dashboard"></main>
+        </div>
+        <script type="module" src="./js/main.js"></script>
+    </body>
 </html>

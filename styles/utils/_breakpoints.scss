@@ -1,0 +1,24 @@
+@mixin media($range) {
+    $xs: 0;
+    $sm: 576px;
+    $md: 768px;
+    $lg: 1024px;
+    $xl: 1200px;
+    $xxl: 1440px;
+  
+    @if $range == xs {
+      @media (min-width: $xs) { @content; }
+    } @else if $range == sm {
+      @media (min-width: $sm) { @content; }
+    } @else if $range == md {
+      @media (min-width: $md) { @content; }
+    } @else if $range == lg {
+      @media (min-width: $lg) { @content; }
+    } @else if $range == xl {
+      @media (min-width: $xl) { @content; }
+    } @else if $range == xxl {
+      @media (min-width: $xxl) { @content; }
+    } @else {
+        @media (min-width: $range) { @content; }
+    }
+  }

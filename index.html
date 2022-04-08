@@ -33,7 +33,10 @@
 
                             <h3>Aspec Informática do Agreste</h3>
 
-                            <small><span>Atualizado em: </span>08/12/2021 18:20</small>
+                            <small
+                                ><span>Atualizado em: </span>08/12/2021
+                                18:20</small
+                            >
                         </div>
                     </header>
 
@@ -147,12 +150,524 @@
                     </div>
                 </footer>
 
-				<button class="menu__open">
-					<i class="fas fa-caret-right"></i>
-				</button>
+                <button class="menu__open">
+                    <i class="fas fa-caret-right"></i>
+                </button>
             </aside>
 
-            <main class="dashboard"></main>
+            <main class="dashboard">
+                <header class="dashboard__header">
+                    <div class="dashboard__logo">
+                        <img
+                            src="./assets/screen.svg"
+                            alt="Ícone de uma planilha dentro do monitor"
+                        />
+
+                        <img src="./assets/aspec-gtrel.svg" alt="Aspec GTRel" />
+                    </div>
+
+                    <div class="dashboard__user">
+                        <button class="notifications">
+                            <img
+                                src="./assets/notifications.svg"
+                                alt="Notificações"
+                            />Novidades
+                        </button>
+
+                        <button class="user">
+                            <img
+                                src="./assets/user.svg"
+                                alt="Usuário sem foto"
+                            />
+                        </button>
+                    </div>
+
+                    <h1>
+                        <svg
+                            width="12"
+                            height="18"
+                            viewBox="0 0 12 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M6.38991 7.9C4.11991 7.31 3.38991 6.7 3.38991 5.75C3.38991 4.66 4.39991 3.9 6.08991 3.9C7.86991 3.9 8.52991 4.75 8.58991 6H10.7999C10.7299 4.28 9.67991 2.7 7.58991 2.19V0H4.58991V2.16C2.64991 2.58 1.08991 3.84 1.08991 5.77C1.08991 8.08 2.99991 9.23 5.78991 9.9C8.28991 10.5 8.78991 11.38 8.78991 12.31C8.78991 13 8.29991 14.1 6.08991 14.1C4.02991 14.1 3.21991 13.18 3.10991 12H0.909912C1.02991 14.19 2.66991 15.42 4.58991 15.83V18H7.58991V15.85C9.53991 15.48 11.0899 14.35 11.0899 12.3C11.0899 9.46 8.65991 8.49 6.38991 7.9Z"
+                                fill="white"
+                            />
+                        </svg>
+
+                        Receitas orçamentárias arrecadadas
+                    </h1>
+                </header>
+
+                <section class="dashboard__search">
+                    <h2>Dados para o relatório</h2>
+
+                    <form>
+                        <fieldset class="dashboard__consults">
+                            <legend>
+                                <img
+                                    src="./assets/filter.svg"
+                                    alt="Ícone para filtrar"
+                                />
+
+                                <button type="button">
+                                    <span>Ocultar consulta</span>
+
+                                    <i class="fas fa-caret-up"></i>
+                                </button>
+                            </legend>
+
+                            <div class="content">
+                                <fieldset class="exercise">
+                                    <legend>Exercício</legend>
+
+                                    <div class="year">
+                                        <select name="year" id="year">
+                                            <option value="2022" selected>
+                                                2022
+                                            </option>
+
+                                            <option value="2021" selected>
+                                                2021
+                                            </option>
+
+                                            <option value="2020">2020</option>
+                                        </select>
+
+                                        <i class="fas fa-caret-down"></i>
+                                    </div>
+                                </fieldset>
+
+                                <div class="switch-button">
+                                    <label class="switch">
+                                        <input type="checkbox" />
+
+                                        <span class="slider"></span>
+                                    </label>
+
+                                    <span>Dados previdência</span>
+                                </div>
+
+                                <div class="units">
+                                    <select name="units" id="units">
+                                        <option value="unit-1" selected>
+                                            Unidades gestoras
+                                        </option>
+
+                                        <option value="unit-2">
+                                            Unidades gestoras
+                                        </option>
+
+                                        <option value="unit-3">
+                                            Unidades gestoras
+                                        </option>
+                                    </select>
+
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+
+                                <div class="creditor">
+                                    <select name="creditor" id="creditor">
+                                        <option value="creditor-1" selected>
+                                            Credor
+                                        </option>
+
+                                        <option value="creditor-2">
+                                            Credor
+                                        </option>
+
+                                        <option value="creditor-3">
+                                            Credor
+                                        </option>
+                                    </select>
+
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+
+                                <fieldset class="start-date">
+                                    <legend>Data de início</legend>
+
+                                    <img
+                                        src="./assets/calendar.svg"
+                                        alt="Ícone de calendário"
+                                    />
+
+                                    <input
+                                        type="date"
+                                        name="start-date"
+                                        id="start-date"
+                                    />
+                                </fieldset>
+
+                                <fieldset class="end-date">
+                                    <legend>Data de fim</legend>
+
+                                    <img
+                                        src="./assets/calendar.svg"
+                                        alt="Ícone de calendário"
+                                    />
+
+                                    <input
+                                        type="date"
+                                        name="end-date"
+                                        id="end-date"
+                                    />
+                                </fieldset>
+
+                                <div class="minimum-value">
+                                    <input
+                                        type="number"
+                                        name="minimum-value"
+                                        id="minimum-value"
+                                        placeholder="Valor mínimo"
+                                    />
+                                </div>
+
+                                <div class="maximum-value">
+                                    <input
+                                        type="number"
+                                        name="maximum-value"
+                                        id="maximum-value"
+                                        placeholder="Valor máximo"
+                                    />
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="dashboard__columns">
+                            <header>
+                                <button type="button">
+                                    <span>Ocultar colunas</span>
+
+                                    <i class="fas fa-caret-up"></i>
+                                </button>
+
+                                <h3>Escolhas as colunas</h3>
+
+                                <div class="switch-button">
+                                    <label class="switch">
+                                        <input type="checkbox" id="select-all" />
+
+                                        <span class="slider"></span>
+                                    </label>
+
+                                    <span>Selecionar todos</span>
+                                </div>
+                            </header>
+
+                            <div class="checkbox-listing">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="date"
+                                        id="date"
+                                    />
+
+                                    <label for="date"
+                                        >Data
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="taxpayer"
+                                        id="taxpayer"
+                                    />
+
+                                    <label for="taxpayer"
+                                        >Contribuinte
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="record"
+                                        id="record"
+                                    />
+
+                                    <label for="record"
+                                        >Registro
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="value"
+                                        id="value"
+                                    />
+
+                                    <label for="value"
+                                        >Valor
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="cancelled"
+                                        id="cancelled"
+                                    />
+
+                                    <label for="cancelled"
+                                        >Anulado
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="cnpj-cpf"
+                                        id="cnpj-cpf"
+                                    />
+
+                                    <label for="cnpj-cpf"
+                                        >CNPJ/CPF
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="historic"
+                                        id="historic"
+                                    />
+
+                                    <label for="historic"
+                                        >Histórico Movimento
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="subaccount"
+                                        id="subaccount"
+                                    />
+
+                                    <label for="subaccount"
+                                        >Subconta
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="code"
+                                        id="code"
+                                    />
+
+                                    <label for="code"
+                                        >Código
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="management-unit"
+                                        id="management-unit"
+                                    />
+
+                                    <label for="management-unit"
+                                        >Unidade Gestora
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="activity"
+                                        id="activity"
+                                    />
+
+                                    <label for="activity"
+                                        >Atividade
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="specification"
+                                        id="specification"
+                                    />
+
+                                    <label for="specification"
+                                        >Especificação
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="key"
+                                        id="key"
+                                    />
+
+                                    <label for="key"
+                                        >Chave de acesso nota
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="classification"
+                                        id="classification"
+                                    />
+
+                                    <label for="classification"
+                                        >Classificação econômica
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        name="subaccount-code"
+                                        id="subaccount-code"
+                                    />
+
+                                    <label for="subaccount-code"
+                                        >Cód. Subconta
+                                        <img
+                                            src="./assets/arrows.svg"
+                                            alt="Ícone de setas"
+                                    /></label>
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="btn-primary">
+                                    Gerar relatório
+                                </button>
+
+                                <button class="btn-secondary">
+                                    Limpar busca
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="dashboard__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Contribuinte</th>
+                                <th>Registro</th>
+                                <th>Valor</th>
+                                <th>Anulado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>02.04.2021</td>
+                                <td>561</td>
+                                <td>01.04.2021</td>
+                                <td>12345678</td>
+                                <td>1234567812</td>
+                            </tr>
+
+                            <tr>
+                                <td>02.04.2021</td>
+                                <td>561</td>
+                                <td>01.04.2021</td>
+                                <td>12345678</td>
+                                <td>1234567812</td>
+                            </tr>
+
+                            <tr>
+                                <td>02.04.2021</td>
+                                <td>561</td>
+                                <td>01.04.2021</td>
+                                <td>12345678</td>
+                                <td>1234567812</td>
+                            </tr>
+
+                            <tr>
+                                <td>02.04.2021</td>
+                                <td>561</td>
+                                <td>01.04.2021</td>
+                                <td>12345678</td>
+                                <td>1234567812</td>
+                            </tr>
+
+                            <tr>
+                                <td>02.04.2021</td>
+                                <td>561</td>
+                                <td>01.04.2021</td>
+                                <td>12345678</td>
+                                <td>1234567812</td>
+                            </tr>
+
+                            <tr>
+                                <td>02.04.2021</td>
+                                <td>561</td>
+                                <td>01.04.2021</td>
+                                <td>12345678</td>
+                                <td>1234567812</td>
+                            </tr>
+
+                            <tr>
+                                <td>02.04.2021</td>
+                                <td>561</td>
+                                <td>01.04.2021</td>
+                                <td>12345678</td>
+                                <td>1234567812</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
         </div>
         <script type="module" src="./js/main.js"></script>
     </body>

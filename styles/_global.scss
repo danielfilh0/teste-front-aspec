@@ -30,6 +30,12 @@ main {
     flex: 1;
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 i {
     font-family: 'fontAwesome';
     font-style: normal;

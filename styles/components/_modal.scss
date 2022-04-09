@@ -1,0 +1,234 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    padding: 1rem;
+
+    @include media(sm) {
+        padding: unset;
+    }
+
+    &.is-active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    * {
+        font-family: $font-family-secondary;
+    }
+
+    i {
+        font-family: 'fontAwesome';
+    }
+
+    &__bg {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($black, 0.5);
+    }
+
+    &__container {
+        max-width: 600px;
+        width: 100%;
+        height: max-content;
+        max-height: 700px;
+        padding: 1rem;
+        position: relative;
+        z-index: 5;
+        background-color: $white;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media(sm) {
+            max-height: 560px;
+            padding: 1.5rem;
+        }
+
+        header {
+            margin-bottom: 1rem;
+
+            p {
+                max-width: 90%;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        color: $gray-medium;
+    }
+
+    p {
+        font-size: 0.875rem;
+        color: $gray-medium;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    i {
+        color: $primary-aux;
+        transition: 0.2s;
+    }
+
+    span {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $blue;
+    }
+
+    .accordion {
+        border: 1px solid $gray-smoke;
+        border-radius: 0.25rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &.is-active {
+            i {
+                transform: rotate(90deg);
+            }
+        }
+
+        &__header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        &__content {
+            padding: 1rem 0;
+            display: none;
+            width: 100%;
+            transition: 0.2s;
+
+            &.is-visible {
+                display: block;
+            }
+        }
+    }
+
+    .switch-button {
+        @include switchButton;
+
+        span {
+            font-weight: 600;
+            letter-spacing: initial;
+            color: $gray-medium;
+        }
+
+        .switch {
+            input:checked + .slider {
+                background-color: $blue;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        margin-top: 1.25rem;
+        border-spacing: 0 1rem;
+
+        thead {
+            border: 0;
+
+            th {
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: $gray-medium;
+                border-bottom: 2px solid $gray-smoke;
+                padding-bottom: 0.8rem;
+
+                & + th {
+                    padding-left: 2rem;
+                }
+
+                &:nth-of-type(3) {
+                    padding-right: 1rem;
+                }
+            }
+        }
+
+        tbody {
+            td {
+                font-size: 0.7rem;
+                color: $gray-medium;
+                border-bottom: 1px solid $gray-smoke;
+                padding-bottom: 5px;
+
+                & + td {
+                    padding-left: 2rem;
+                }
+            }
+
+            tr:last-of-type {
+                td {
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    .btn-save {
+        width: max-content;
+        background-color: $primary-aux;
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+        color: $white;
+        transition: 0.2s;
+        border-radius: 3px;
+
+        &:hover {
+            filter: brightness(1.2);
+        }
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: $red;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+
+        @include media(sm) {
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+
+        &:hover {
+            filter: brightness(1.1);
+        }
+
+        i {
+            font-size: 0.8rem;
+            color: $white;
+        }
+    }
+}

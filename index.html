@@ -9,6 +9,10 @@
             href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
         <script
             src="https://kit.fontawesome.com/5d568d2bbd.js"
             crossorigin="anonymous"
@@ -347,7 +351,10 @@
 
                                 <div class="switch-button">
                                     <label class="switch">
-                                        <input type="checkbox" id="select-all" />
+                                        <input
+                                            type="checkbox"
+                                            id="select-all"
+                                        />
 
                                         <span class="slider"></span>
                                     </label>
@@ -668,6 +675,243 @@
                     </table>
                 </section>
             </main>
+
+            <section class="cookies is-visible">
+                <div class="container">
+                    <p>
+                        Utilizamos cookies para melhorar a sua experiência de
+                        navegação. Ao continuar você concorda com a nossa
+                        <a href="#">Política de Privacidade</a>. Caso desejar,
+                        acesse <a href="#">Ajuste de Cookies</a> para gerenciar
+                        suas configurações.
+                    </p>
+
+                    <div class="buttons">
+                        <button data-open-modal="modal">Ajustar Cookie</button>
+
+                        <button class="accept-cookies">Aceito</button>
+                    </div>
+                </div>
+
+                <div class="modal">
+                    <div class="modal__bg"></div>
+
+                    <div class="modal__container">
+                        <button class="close-modal" data-close-modal="modal">
+                            <i class="fa fa-close"></i>
+                        </button>
+
+                        <header>
+                            <h2>Visão geral de privacidade</h2>
+
+                            <p>
+                                Este site usa cookies para melhorar a sua
+                                experiência. Destes, os cookies que são
+                                categorizados como necessários são armazenados
+                                no seu navegador. Também usamos cookies de
+                                terceiros que são armazenados apenas com a sua
+                                permissão.
+                            </p>
+                        </header>
+
+                        <ul>
+                            <li class="accordion">
+                                <button class="accordion__header">
+                                    <i class="fas fa-chevron-right"></i>
+
+                                    <span>Necessário</span>
+                                </button>
+
+                                <div class="switch-button">
+                                    <span>Sempre ativado</span>
+
+                                    <label class="switch">
+                                        <input type="checkbox" checked="true" />
+
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+
+                                <div class="accordion__content">
+                                    <p>
+                                        Os cookies necessários são absolutamente essenciais para o funcionamento adequado do site. Esses cookies garantem funcionalidades básicas e recursos de segurança do site, de forma anônima.
+                                    </p>
+
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Cookie</th>
+                                                <th>Duração</th>
+                                                <th>Descrição</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>cookielawinfo-checbox-analytics</td>
+                                                <td>11 meses</td>
+                                                <td>Este cookie é definido pelo plugin GDPR Cookie Consent. O cookie é usado para armazenar o consentimento do usuário para os cookies na categoria "Analytics".</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>cookielawinfo-checbox-functional</td>
+                                                <td>11 meses</td>
+                                                <td>O cookie é definido pelo consentimento do cookie GDPR para registrar o consentimento do usuário para os cookies na categoria "Funcional".</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>cookielawinfo-checbox-others</td>
+                                                <td>11 meses</td>
+                                                <td>Este cookie é definido pelo plugin GDPR Cookie Consent. O cookie é usado para armazenar o consentimento do usuário para os cookies na categoria "Outros.</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>cookielawinfo-checkbox-necessary</td>
+                                                <td>11 meses</td>
+                                                <td>Este cookie é definido pelo plugin GDPR Cookie Consent. Os cookies são usados para armazenar o consentimento do usuário para os cookies na categoria "Necessário".</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>cookielawinfo-checkbox-performance</td>
+                                                <td>11 meses</td>
+                                                <td>Este cookie é definido pelo plugin GDPR Cookie Consent. O cookie é usado para armazenar o consentimento do usuário para os cookies na categoria "Desempenho".</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>viewed_cookie_policy</td>
+                                                <td>11 meses</td>
+                                                <td>O cookie é definido pelo plug-in GDPR Cookie Consent e é usado para armazenar se o usuário consentiu ou não com o uso de cookies. Ele não armazena nenhum dado pessoal.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li class="accordion">
+                                <button class="accordion__header">
+                                    <i class="fas fa-chevron-right"></i>
+
+                                    <span>Analíticos</span>
+                                </button>
+
+                                <div class="switch-button">
+                                    <span>Desativado</span>
+
+                                    <label class="switch">
+                                        <input type="checkbox" />
+
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+
+                                <div class="accordion__content">
+                                    <p>
+                                        Cookies analíticos são usados para entender como os visitantes interagem com o site. Esses cookies ajudam a fornecer informações sobre as métricas do número de visitantes, taxa de rejeição, origem do tráfego, etc.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="accordion">
+                                <button class="accordion__header">
+                                    <i class="fas fa-chevron-right"></i>
+
+                                    <span>Funcional</span>
+                                </button>
+
+                                <div class="switch-button">
+                                    <span>Desativado</span>
+
+                                    <label class="switch">
+                                        <input type="checkbox" />
+
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+
+                                <div class="accordion__content">
+                                    <p>
+                                        Os cookies funcionais ajudam a realizar certas funcionalidades, como compartilhar o conteúdo do site em plataformas de mídia social, coletar feedbacks e outros recursos de terceiros.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="accordion">
+                                <button class="accordion__header">
+                                    <i class="fas fa-chevron-right"></i>
+
+                                    <span>Outros</span>
+                                </button>
+
+                                <div class="switch-button">
+                                    <span>Sempre ativado</span>
+
+                                    <label class="switch">
+                                        <input type="checkbox" checked="true" />
+
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+
+                                <div class="accordion__content">
+                                    <p>
+                                        Outros cookies não categorizados são aqueles que estão sendo analisados e não foram classificados em uma categoria ainda.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="accordion">
+                                <button class="accordion__header">
+                                    <i class="fas fa-chevron-right"></i>
+
+                                    <span>Performance</span>
+                                </button>
+
+                                <div class="switch-button">
+                                    <span>Desativado</span>
+
+                                    <label class="switch">
+                                        <input type="checkbox" />
+
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+
+                                <div class="accordion__content">
+                                    <p>
+                                        Cookies de desempenho são cookies usados especificamente para coletar dados sobre como os visitantes usam um site, quais páginas de um site são visitadas com mais frequência ou se recebem mensagens de erro nas páginas da web.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="accordion">
+                                <button class="accordion__header">
+                                    <i class="fas fa-chevron-right"></i>
+
+                                    <span>Propaganda</span>
+                                </button>
+
+                                <div class="switch-button">
+                                    <span>Desativado</span>
+
+                                    <label class="switch">
+                                        <input type="checkbox" />
+
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+
+                                <div class="accordion__content">
+                                    <p>
+                                        Os cookies de publicidade são usados para fornecer aos visitantes anúncios e campanhas de marketing relevantes. Esses cookies rastreiam visitantes em sites e coletam informações para fornecer anúncios personalizados.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button class="btn-save" data-close-modal="modal">Salvar e aceitar</button>
+                    </div>
+                </div>
+            </section>
         </div>
         <script type="module" src="./js/main.js"></script>
     </body>

@@ -1,3 +1,8 @@
+import activeAccordion from "./scripts/accordion";
+import closeCookies from "./scripts/close-cookies";
+import activeModal from "./scripts/modal";
+import activeSwitchButton from "./scripts/switch-button";
+
 function dropdownMenuItems() {
     const menuItems = document.querySelectorAll('.menu__item');
     const submenus = document.querySelectorAll('.submenu');
@@ -99,3 +104,11 @@ hideColumns();
 selectAllCheckboxs();
 
 generateReport();
+
+activeModal();
+
+activeAccordion();
+
+activeSwitchButton();
+
+closeCookies();
